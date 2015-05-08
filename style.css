@@ -1,0 +1,73 @@
+body {
+	background-image: url("images/stonehenge3.jpg");
+	background-size: cover;
+
+}
+.stone-left {
+	float: left;
+	margin: 0 0 0 0;
+}
+.stone-right {
+	float: right;
+	margin: 0px 0 0 60px;
+
+}
+.player-one-score {
+	float: left;
+	margin: 0 0 20px 0;
+	
+}
+.player-two-score {
+	float: right;
+	margin: 0 2px 20px 5px;
+	padding: 0 0 0 0;
+}
+.stone1 {
+	width: 70px;
+}
+.stone2 {
+	width: 80px;
+	margin-top: -6px;
+	margin-left: 74px;
+}
+
+.clearfix:before,
+.clearfix:after {
+	content: ""; 
+	display: table; 
+}
+
+.clearfix:after {
+	clear: both;
+}
+h1 {
+	text-align: center;
+}
+
+.main {
+	width: 500px;
+	height: 500px;
+	/*background-color: #000;*/
+	margin: 0 auto;
+	/*background-image: url("images/stone.jpg");*/
+}
+.box {
+	width: 31%;
+	height: 31%;
+	background-color: #fff;
+	float: left;
+	margin: 2.84px;
+
+	border-radius: 15px 50px;
+	border: 3px solid #8A807C;
+}
+.box:hover {
+	border: 3px solid #68ffd4;
+	background-image: url("images/stoneface.jpg");
+	/*background-color: #999;*/
+	width: 31%;
+	height: 31%;
+}
+img {
+	opacity: .5;
+}
