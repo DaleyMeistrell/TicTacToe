@@ -1,57 +1,51 @@
-// var playGame = document.getElementsByClassName("box")
-// console.log(playGame)
-
-// var player = true;
-
-// addGamers();
-
-// function addGamers() {
-// 	for(var i = 0; i < playGame.length; i++){
-// 		console.log("loop called");
-// 		playGame[i].addEventListener('click', function(){
-// 			console.log('x');
-// 		if (player == true && this.innerHTML == "") {
-// 			this.innerHTML == "x"; player == false; 
-// 		} else if  (player == false && this.innerHTML == ""){
-// 	this.innerHTML == "0"; player == true;
-// } else {
-// 	alert("Choose an empty block");}
-// }
-
+/* 1) Limit each box to be clicked only once
+   2) hover effects to disappear after box has been selected
+   3) 9 clicks max
+   4) images to replace X's and O's
+   5) count score human vs human, first to 5 points wins
+   6) each point adds 100% opacity to 50% rock opacity
+   7) add win logic, 3 in a row wins the game
+   8) when one of the players reaches 5 points, notify which player won
+          */
+var count = 0;
+var move=" ";
+var imageSrc1 = "images/player1.png"; 
+var imageSrc2 = "images/player2.png";
 
 var boxes = document.getElementsByClassName("box");
-console.log(boxes)
-var move = 0;
+		console.log(boxes)
+
+
+for (var i=0; i < boxes.length; i++){
+	boxes[i].addEventListener("click", addToOutput);
+}
 
 
 function takeTurn() {
-move++;
-   if (move % 2 == 0) {
-	return "O";
+	count++;
+   if (count % 2 == 0) {
+		move = "O";
 } else {
-	return "X";
+		move = "X";
+  }
 }
+
+
+
+
+function addToOutput(click){
+	takeTurn();
+	this.innerHTML = move;
+	document.getElementsByClassName("box").innerHTML = move;
 }
 
-// addToOutput()
 
 
-function addToOutput(){
-	console.log(this.innerHTML)
-	document.getElementsByClassName("box").innerHTML += this.innerHTML;
-for (var i=0; i < boxes.length; i++){
+
+/*for (var i=0; i < boxes.length; i++){
 	boxes[i].addEventListener("click", addToOutput);
-	}
-}
-
-
-
-
-
-
-
-
-
+	console.log(i);
+	}*/
 
 
 
