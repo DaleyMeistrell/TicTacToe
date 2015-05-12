@@ -47,9 +47,7 @@ h1 {
 .main {
 	width: 500px;
 	height: 500px;
-	/*background-color: #000;*/
 	margin: 0 auto;
-	/*background-image: url("images/stone.jpg");*/
 }
 .box {
 	width: 31%;
@@ -57,13 +55,12 @@ h1 {
 	background-color: #fff;
 	float: left;
 	margin: 2.84px;
-
 	border-radius: 15px 50px;
 	border: 3px solid #8A807C;
 }
 .box:hover {
 	border: 3px solid #68ffd4;
-	background-image: url("images/stoneface.jpg");
+	/*background-image: url("images/stoneface.jpg");*/
 	/*background-color: #999;*/
 	width: 31%;
 	height: 31%;
